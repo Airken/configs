@@ -1,0 +1,20 @@
+Install go:
+  brew install go
+
+Environment:
+  mkdir ~/go
+  export GOROOT=/usr/local/Cellar/go/1.2.2/libexec/
+  export GOPATH=/Users/ai/go
+
+Install Vundle:
+  https://github.com/gmarik/Vundle.vim
+
+Install gocode:
+  https://github.com/nsf/gocode
+
+Setup vim:
+  cp -r $GOROOT/misc/vim/* ~/.vim/
+edit ~/.vimrc
+  syntax on
+  filetype plugin on
+  set omnifunc=syntaxcomplete#Complete
